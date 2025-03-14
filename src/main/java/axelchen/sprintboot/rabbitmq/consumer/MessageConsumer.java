@@ -1,6 +1,7 @@
 package axelchen.sprintboot.rabbitmq.consumer;
 
 import axelchen.sprintboot.rabbitmq.model.TaskPo;
+import axelchen.sprintboot.rabbitmq.model.TaskPoDemo;
 import com.google.gson.Gson;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -15,7 +16,7 @@ public class MessageConsumer {
     @RabbitListener(queues = "simple-queue")
     public void receive(String message) {
         logger.info("Received message: {}", message);
-        logger.info("Parsed message: {}", gson.fromJson(message, TaskPo.class));
+        logger.info("Parsed message: {}", gson.fromJson(message, TaskPoDemo.class));
     }
 
 }

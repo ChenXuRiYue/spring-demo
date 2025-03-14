@@ -1,10 +1,9 @@
 package axelchen.sprintboot.rabbitmq.quartz;
-import axelchen.sprintboot.rabbitmq.quartz.job.TaskToMqJob;
+import axelchen.sprintboot.rabbitmq.quartz.job.PullTaskToQuartzJob;
 import lombok.RequiredArgsConstructor;
 import org.quartz.*;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
-import org.springframework.scheduling.quartz.SchedulerFactoryBean;
 
 // Quartz 相关的配置中心
 @Configuration
@@ -17,7 +16,7 @@ public class QuartzConfig {
 
     @Bean
     public JobDetail taskToMqJobDetail() {
-        return JobBuilder.newJob(TaskToMqJob.class)
+        return JobBuilder.newJob(PullTaskToQuartzJob.class)
                 // 配置 JobDetail
                 .withIdentity("taskToMq", "mqGroup")
                 // 持久化任务

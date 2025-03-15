@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="axelchen.spring.mysql.mapper.UserBehaviorLogMapper">
+
+    <!-- 结果映射 -->
+    <resultMap id="userBehaviorLogMap" type="axelchen.spring.mysql.model.entity.UserBehaviorLog">
+        <id property="id" column="id" jdbcType="CHAR"/>
+        <id property="targetTypeId" column="target_type_id" jdbcType="TINYINT"/>
+        <result property="targetType" column="target_type" jdbcType="VARCHAR"/>
+        <result property="behaviorType" column="behavior_type" jdbcType="VARCHAR"/>
+        <result property="targetId" column="target_id" jdbcType="CHAR"/>
+        <result property="createTime" column="create_time" jdbcType="BIGINT"/>
+        <result property="updateTime" column="update_time" jdbcType="BIGINT"/>
+        <result property="userId" column="user_id" jdbcType="VARCHAR"/>
+    </resultMap>
+
+    <!-- 插入 -->
+    <insert id="insert" parameterType="axelchen.spring.mysql.model.entity.UserBehaviorLog">
+        INSERT INTO user_behavior_log (
+            id, target_type_id, target_type, behavior_type, target_id, create_time, update_time, user_id
+        ) VALUES (
+                     #{id}, #{targetTypeId}, #{targetType}, #{behaviorType}, #{targetId}, #{createTime}, #{updateTime}, #{userId}
+                 )
+    </insert>
+
+    <!-- 查询 -->
+    <select id="findByTargetType" resultMap="userBehaviorLogMap">
+        SELECT * FROM user_behavior_log WHERE target_type = #{targetType}
+    </select>
+</mapper>

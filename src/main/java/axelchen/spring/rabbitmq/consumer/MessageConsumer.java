@@ -1,7 +1,6 @@
-package axelchen.sprintboot.rabbitmq.consumer;
+package axelchen.spring.rabbitmq.consumer;
 
-import axelchen.sprintboot.rabbitmq.model.TaskPo;
-import axelchen.sprintboot.rabbitmq.model.TaskPoDemo;
+import axelchen.spring.rabbitmq.model.TaskPoDemo;
 import com.google.gson.Gson;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;

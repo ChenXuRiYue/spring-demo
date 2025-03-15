@@ -1,10 +1,8 @@
-package axelchen.sprintboot.rabbitmq.model;
+package axelchen.spring.rabbitmq.model;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.RequiredArgsConstructor;
-
-import java.time.LocalDateTime;
 
 /**
  * 定时任务实体类，对应数据库表 tasks。

@@ -93,7 +93,7 @@
                 <artifactId>spring-boot-maven-plugin</artifactId>
                 <version>${spring-boot.version}</version>
                 <configuration>
-                    <mainClass>axelchen.sprintboot.SprintBootApplication</mainClass>
+                    <mainClass>axelchen.spring.SprintBootApplication</mainClass>
                     <skip>true</skip>
                 </configuration>
                 <executions>

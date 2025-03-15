@@ -1,4 +1,4 @@
-package axelchen.sprintboot.rabbitmq.model;
+package axelchen.spring.rabbitmq.model;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;

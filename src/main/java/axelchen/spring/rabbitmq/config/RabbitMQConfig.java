@@ -1,4 +1,4 @@
-package axelchen.sprintboot.rabbitmq.config;
+package axelchen.spring.rabbitmq.config;
 
 
 import org.springframework.amqp.core.Queue;

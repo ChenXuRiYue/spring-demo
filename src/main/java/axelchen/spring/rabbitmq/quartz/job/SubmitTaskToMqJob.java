@@ -1,8 +1,7 @@
-package axelchen.sprintboot.rabbitmq.quartz.job;
+package axelchen.spring.rabbitmq.quartz.job;
 
 
-import axelchen.sprintboot.rabbitmq.model.TaskPoDemo;
-import axelchen.sprintboot.rabbitmq.producer.MessageController;
+import axelchen.spring.rabbitmq.model.TaskPoDemo;
 import com.google.gson.Gson;
 import lombok.RequiredArgsConstructor;
 import org.quartz.Job;
@@ -10,12 +9,9 @@ import org.quartz.JobDataMap;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.amqp.rabbit.core.RabbitTemplate;
-import org.springframework.format.annotation.DateTimeFormat;
 import org.springframework.stereotype.Service;
 
 import java.time.LocalDateTime;
-import java.util.Date;
-import java.util.Timer;
 
 @Service
 @RequiredArgsConstructor

@@ -1,5 +1,5 @@
-package axelchen.sprintboot.rabbitmq.quartz;
-import axelchen.sprintboot.rabbitmq.quartz.job.PullTaskToQuartzJob;
+package axelchen.spring.rabbitmq.quartz;
+import axelchen.spring.rabbitmq.quartz.job.PullTaskToQuartzJob;
 import lombok.RequiredArgsConstructor;
 import org.quartz.*;
 import org.springframework.context.annotation.Bean;

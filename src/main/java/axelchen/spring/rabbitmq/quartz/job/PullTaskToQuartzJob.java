@@ -1,7 +1,6 @@
-package axelchen.sprintboot.rabbitmq.quartz.job;
+package axelchen.spring.rabbitmq.quartz.job;
 
-import axelchen.sprintboot.rabbitmq.model.TaskPo;
-import axelchen.sprintboot.rabbitmq.model.TaskPoDemo;
+import axelchen.spring.rabbitmq.model.TaskPoDemo;
 import com.google.gson.Gson;
 import org.quartz.*;
 import org.springframework.beans.factory.annotation.Autowired;

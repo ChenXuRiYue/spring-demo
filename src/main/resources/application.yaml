@@ -6,7 +6,10 @@ spring:
     port: 5672
     username: guest
     password: guest
-
+  data:
+    redis:
+      host: 47.113.150.187
+      port: 6379
   ## 数据库配置
   datasource:
     username: root
@@ -19,4 +22,6 @@ spring:
       idle-timeout: 300000
       maximum-pool-size: 5
       minimum-idle: 5
+
+
 
